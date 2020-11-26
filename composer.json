@@ -1,0 +1,38 @@
+{
+    "name": "malico/serve",
+    "description": "Easily serve laravel application to network",
+    "license": "MIT",
+    "authors": [
+    {
+        "name": "Malico",
+        "email": "hi@malico.me"
+    }],
+    "require":
+    {
+        "illuminate/support": "~5.7|^6.0|^7.0|^8.0"
+    },
+    "autoload":
+    {
+        "psr-4":
+        {
+            "Malico\\Serve\\": "src/"
+        }
+    },
+
+    "extra":
+    {
+        "laravel":
+        {
+            "providers": [
+                "Malico\\Serve\\ServeServiceProvider"
+            ]
+        }
+    },
+
+    "config":
+    {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
